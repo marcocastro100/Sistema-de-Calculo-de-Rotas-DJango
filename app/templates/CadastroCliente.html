@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+<form method='POST'>{% csrf_token %}
+    <table>{{form.as_table}}</table>
+    <input type='submit' value='Cadastrar' />
+</form>
+
+<!--Generates a list of already cadastred CLients-->
+<ul>
+    {% for cli in Clientes %}
+        <li><pre> {{cli.name}} - {{cli.cidade}} - {{cli.latitude}} - {{cli.longitude}}</pre></li>
+    {% endfor %}
+</ul>
+{% endblock %}

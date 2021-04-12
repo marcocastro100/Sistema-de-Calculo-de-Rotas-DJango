@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+<form method='POST'>{% csrf_token %}
+    <table>{{form.as_table}}</table>
+    <input type='submit' value='Cadastrar' />
+</form>
+
+<ul>
+    {% for fun in Funcionarios %}
+        <li><pre>{{fun.name}} - {{fun.idade}}</pre></li>
+    {% endfor %}
+</ul>
+{% endblock %}

@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block content %}
+<form method='POST'>{% csrf_token %}
+    <table>
+        <!--Manual CLient-->
+        <tr>
+            <th>Clientes:</th>
+            <td>
+                <ul>
+                    {% for cli in Clientes %}
+                        <li>{{cli.name}} - {{cli.cidade}} - {{cli.latitude}} - {{cli.longitude}} --- <button><a href="{% url 'Destino' cli.id %}">Adicionar Destino</a></button></li>
+                    {% endfor %}
+                </ul>
+            </td>
+        </tr>
+
+        {{form.as_table}}
+    </table>
+    <input type='submit' value='Calcular Rota' />
+</form>
+
+<!-- Show already inserted clients-->
+    <p>Destinos Adicionados:</p>
+        <ul>
+        {% for dest in Destinos %}
+            <li><pre> {{dest.name}} - {{dest.cidade}} - {{dest.latitude}} - {{dest.longitude}}</pre></li>
+        {% endfor %}
+        </ul>
+
+
+    <p>Matriz Final</p>
+        {%for line in Result %}
+            {{line}}<br>
+        {% endfor %}
+{% endblock %}

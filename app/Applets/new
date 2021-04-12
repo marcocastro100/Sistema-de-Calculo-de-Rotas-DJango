@@ -1,0 +1,11 @@
+
+
+
+
+
+
+http://www.mapquestapi.com/directions/v2/routematrix?key=gAQQ0DBuAZAjvg02l6sU4N7cWBvNuW7o&ambiguities=ignore&doReverseGeocode=false&outFormat=xml&routeType=fastest&unit=k&allToAll=true&manyToOne=false&from=-19.9788,-45.4883&to=-18.2381,-43.611&to=-19.8157,-43.9542
+http://www.mapquestapi.com/directions/v2/routematrix?key=gAQQ0DBuAZAjvg02l6sU4N7cWBvNuW7o&ambiguities=ignore&doReverseGeocode=false&outFormat=xml&routeType=fastest&unit=k&allToAll=true&manyToOne=false&from=-19.9788,-45.4883&to=-19.9788,-45.4883&to=-18.2381,-43.611&to=-19.8157,-43.9542
+
+
+{'allToAll': True, 'distance': [[0, 294.34, 358.345], [303.97, 0, 204.813], [359.243, 205.178, 0]], 'locations': [{'dragPoint': False, 'displayLatLng': {'lng': -43.611, 'lat': -18.2381}, 'adminArea4': '', 'adminArea5': '', 'postalCode': '', 'adminArea1': '', 'adminArea3': '', 'type': 's', 'sideOfStreet': 'N', 'geocodeQualityCode': 'XXXXX', 'adminArea4Type': 'County', 'linkId': 0, 'street': '', 'adminArea5Type': 'City', 'geocodeQuality': 'LATLNG', 'adminArea1Type': 'Country', 'adminArea3Type': 'State', 'latLng': {'lng': -43.611, 'lat': -18.2381}}, {'dragPoint': False, 'displayLatLng': {'lng': -43.9542, 'lat': -19.8157}, 'adminArea4': '', 'adminArea5': '', 'postalCode': '', 'adminArea1': '', 'adminArea3': '', 'type': 's', 'sideOfStreet': 'N', 'geocodeQualityCode': 'XXXXX', 'adminArea4Type': 'County', 'linkId': 0, 'street': '', 'adminArea5Type': 'City', 'geocodeQuality': 'LATLNG', 'adminArea1Type': 'Country', 'adminArea3Type': 'State', 'latLng': {'lng': -43.9542, 'lat': -19.8157}}, {'dragPoint': False, 'displayLatLng': {'lng': -45.4883, 'lat': -19.9788}, 'adminArea4': '', 'adminArea5': '', 'postalCode': '', 'adminArea1': '', 'adminArea3': '', 'type': 's', 'sideOfStreet': 'N', 'geocodeQualityCode': 'XXXXX', 'adminArea4Type': 'County', 'linkId': 0, 'street': '', 'adminArea5Type': 'City', 'geocodeQuality': 'LATLNG', 'adminArea1Type': 'Country', 'adminArea3Type': 'State', 'latLng': {'lng': -45.4883, 'lat': -19.9788}}], 'time': [[0, 13075, 17137], [13031, 0, 9089], [17344, 8861, 0]], 'manyToOne': False, 'info': {'statuscode': 0, 'copyright': {'imageAltText': '© 2021 MapQuest, Inc.', 'imageUrl': 'http://api.mqcdn.com/res/mqlogo.gif', 'text': '© 2021 MapQuest, Inc.'}, 'messages': []}}

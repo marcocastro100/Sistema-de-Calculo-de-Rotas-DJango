@@ -1,0 +1,43 @@
+<html>
+<head>
+    <title>Pesquisa Operacional</title>
+    <style>
+        .block {
+        display: block;
+        width: 100%;
+        font-size: 16px;
+        cursor: pointer;
+        text-align: center;
+        border: solid 1px;
+        }
+    </style>
+</head>
+<body>
+    <table border="1px" style="width : 100%; height:100%">
+        <tr>
+            <!-- Menu -->
+            <td style="width: 15%;">
+                <div style="width: 100%; height:20%; margin-top: 1px; border: 1px solid;text-align: center;"> 
+                    <p>Company LOGO</p>
+                </div>
+
+                <div style="width:100%;height: 80%;text-align: center;">
+                    <button class="block"><p><a href="{% url 'Clientes' %}">Cadastro Cliente</a></p></button>
+                    <button class="block"><p><a href="{% url 'Cidades' %}">Cadastro Cidade</a></p> </button>
+                    <button class="block"><p><a href="{% url 'Funcionarios' %}">Cadastro Funcionario</a></p></button>
+                    <button class="block"><p><a href="{% url 'Rota' %}">Calcular Rota</a></p></button>
+                </div>
+            </td>
+            <!--Content for each page-->
+            <td style="width: 85%;">
+                <div style="width: 100%;height: 100%;">
+                    {% block content %}
+                        
+                    {% endblock %}
+                </div>
+                
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{%extends 'base.html'%}
+{% block content %}
+<h3>___________________________List of Applets Json____________________________</h3>
+<ul>
+    {% for applet in Applets %}
+        <li><pre><a href="{% url 'detail' applet.Applet.id %}">Edit: {{applet.Applet.id}}</a> - {{applet}}</pre></li>
+    {% endfor %}
+
+</ul>
+<button><a href="{% url 'create' %}">Create Applet</a></button>
+<button><a href="{% url 'search' %}">Search IEEE-LOM</a></button>
+{% endblock %}

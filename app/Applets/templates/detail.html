@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+<h3>___________________________Edit Applet Id :{{Applet.id}}____________________________</h3>
+<form method='POST'>{% csrf_token %}
+    <table>{{form.as_table}}</table>
+    <input type='submit' value='Save' />
+    <button> <a href="{% url 'delete' Applet.id %}" >Delete</a></button>
+    <button><a href=" {% url 'download' Applet.id %} " >Json_Format</a></button>
+</form>
+<embed type="video/webm" src="https://www.geogebra.org/classic/{{Applet.url}}" width="1000" height="500">
+{% endblock %}

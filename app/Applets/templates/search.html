@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h3>___________________________Search for an Applet____________________________</h3>
+<form method='POST'>{% csrf_token %}
+    {% if form %} <!--Check if form was passed by parameter to show him-->
+    
+    <table>{{form.as_table}}</table>
+        
+    {% endif %}
+    <input type='submit' value='Search' />
+</form>
+{% if instances %}
+    {% for item in instances %}
+        <pre><a href=" {% url 'detail' item.Applet.id %}">Edit: {{item.Applet.id}}</a> - {{item}}</pre>
+    {% endfor %}
+{% endif %}
+
+
+{% endblock %}
